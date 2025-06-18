@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create an account to explore more sounds and categories."
+    />
+    <meta name="author" content="Dima Mihai" />
+    <title>Sounds Portal - Registration</title>
+    <link rel="icon" type="image/png" href="../../assets/fav.jpg" />
+    <link rel="stylesheet" href="register.css" />
+    <script type="module" src="registerValidation.js"></script>
+  </head>
+
+  <body class="register-page">
+    <header>
+      <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+          <li><a href="../../index.html">Latest Sounds</a></li>
+          <li><a href="../categories/categories.html">Categories</a></li>
+          <li><a href="../login/login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Register</h1>
+      <form id="register-form" novalidate>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          required
+          placeholder="Enter your email"
+          aria-label="Email"
+        />
+        <span class="error-message" aria-live="polite"></span>
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          autocomplete="new-password"
+          required
+          placeholder="Enter your password"
+          aria-label="Password"
+        />
+        <span class="error-message" aria-live="polite"></span>
+
+        <label for="repeat-password">Repeat Password:</label>
+        <input
+          type="password"
+          id="repeat-password"
+          name="repeat-password"
+          autocomplete="new-password"
+          required
+          placeholder="Repeat your password"
+          aria-label="Repeat Password"
+        />
+        <span class="error-message" aria-live="polite"></span>
+
+        <button type="submit">Register</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Sounds Portal</p>
+    </footer>
+  </body>
+</html>

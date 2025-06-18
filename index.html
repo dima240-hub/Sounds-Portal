@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Listen to the latest sounds divided into categories. Discover ambient, nature, relaxing sounds and more." />
+  <meta name="author" content="Dima Mihai" />
+  <title>Sounds Portal - Latest Sounds</title>
+  <link rel="icon" type="image/png" href="assets/fav.jpg" />
+  <link rel="stylesheet" href="index.css" />
+  <script type="module" src="../scripts/searchSounds.js"></script>
+</head>
+
+<body class="latest-sounds-page">
+  <header>
+    <nav>
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Latest Sounds</a></li>
+        <li><a href="pages/categories/categories.html">Categories</a></li>
+        <li><a href="pages/login/login.html">Login</a></li>
+        <li><a href="pages/register/register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Latest Sounds</h1>
+    <input type="text" class="search-input" placeholder="Search sounds..." />
+    <p class="no-results">No sounds found.</p>
+    <div class="sound-categories">
+      <article class="category">
+        <h2>Ambient</h2>
+        <div class="sound-list">
+          <div class="sound-card">
+            <img src="assets/ambientForest.jpg" alt="Ambient Waves" loading="lazy" />
+            <p>Ambient Waves</p>
+            <audio controls>
+              <source src="sounds/exampleAudio.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+      </article>
+      <article class="category">
+        <h2>Relaxing</h2>
+        <div class="sound-list">
+          <div class="sound-card">
+            <img src="assets/nature.jpg" alt="Nature" loading="lazy" />
+            <p>Nature</p>
+            <audio controls>
+              <source src="sounds/relaxing.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+          <div class="sound-card">
+            <img src="assets/ambient.jpg" alt="Relaxing Waves" loading="lazy" />
+            <p>Relaxing Waves</p>
+            <audio controls>
+              <source src="sounds/exampleAudio.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+      </article>
+      <article class="category">
+        <h2>LOFI</h2>
+        <div class="sound-list">
+          <div class="sound-card">
+            <img src="assets/lofi.png" alt="Lofi Hip Hop" loading="lazy" />
+            <p>Lofi Hip Hop</p>
+            <audio controls>
+              <source src="sounds/lofi.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+      </article>
+      <article class="category">
+        <h2>ChillOut</h2>
+        <div class="sound-list">
+          <div class="sound-card">
+            <img src="assets/chillout.jpg" alt="Chill Out" loading="lazy" />
+            <p>Chill Out</p>
+            <audio controls>
+              <source src="sounds/chillout.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+      </article>
+      <article class="category">
+        <h2>Minimal</h2>
+        <div class="sound-list">
+          <div class="sound-card">
+            <img src="assets/minimal.png" alt="Minimal Tech" loading="lazy" />
+            <p>Minimal Tech</p>
+            <audio controls>
+              <source src="sounds/minimal.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Sounds Portal</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+ul {
+	list-style-type: none;
+}
+
+nav .nav-links {
+	display: flex;
+	gap: var(--spacing-medium);
+}
+
+nav .nav-links li a {
+	padding: var(--spacing-small) var(--spacing-medium);
+	border-radius: var(--border-radius-small);
+	transition: background-color 0.3s ease;
+}
+
+nav .nav-links li a:hover,
+nav .nav-links li a:focus {
+	background-color: rgba(13, 110, 253, 0.1);
+}
+
+nav .menu-toggle {
+	display: none;
+	background: none;
+	border: none;
+	font-size: var(--font-size-large);
+}

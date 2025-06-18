@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Log in to listen to sounds and explore more categories."
+    />
+    <meta name="author" content="Dima Mihai" />
+    <title>Sounds Portal - Login</title>
+    <link rel="icon" type="image/png" href="../../assets/fav.jpg" />
+    <link rel="stylesheet" href="login.css" />
+    <script type="module" src="./loginValidation.js"></script>
+  </head>
+
+  <body class="login-page">
+    <header>
+      <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+          <li><a href="../../index.html">Latest Sounds</a></li>
+          <li><a href="../categories/categories.html">Categories</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="../register/register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Login</h1>
+      <form id="login-form" novalidate>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+          aria-label="Email"
+          aria-describedby="email-error"
+          autocomplete="email"
+        />
+        <span id="email-error" class="error-message" aria-live="polite"></span>
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="Enter your password"
+          aria-label="Password"
+          aria-describedby="password-error"
+          autocomplete="current-password"
+        />
+        <span
+          id="password-error"
+          class="error-message"
+          aria-live="polite"
+        ></span>
+
+        <label for="remember">
+          <input
+            type="checkbox"
+            id="remember"
+            name="remember"
+            aria-label="Remember me"
+          />
+          Remember me
+        </label>
+
+        <button type="submit">Login</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Sounds Portal</p>
+    </footer>
+  </body>
+</html>

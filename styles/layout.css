@@ -1,0 +1,27 @@
+header,
+main,
+footer {
+	max-width: var(--width-extra-large);
+	margin: 0 auto;
+	padding: var(--spacing-medium);
+}
+
+header {
+	position: sticky;
+	top: 0;
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px var(--shadow-color);
+	z-index: 1000;
+}
+
+main {
+	margin-top: var(--spacing-large);
+}
+
+footer {
+	text-align: center;
+	margin-top: var(--spacing-large);
+	padding: var(--spacing-medium) 0;
+	font-size: var(--font-size-small);
+	color: var(--secondary-color);
+}
